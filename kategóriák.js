@@ -1,19 +1,4 @@
-//Késleltetett Popup doboz, mely kattintásra eltűnik
-setTimeout(function() {
-    var popupOverlay = document.querySelector('.popup-overlay');
-
-    popupOverlay.classList.add('active');
-
-    popupOverlay.addEventListener('click', function() {
-        popupOverlay.classList.remove('active');
-    });
-
-    var popup = document.querySelector('.popup');
-
-    popup.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-}, 1000);
+//Azért készítettem a kettes oldalhoz külön js-oldalt, hogy itt ne legyen popup...
 
 //Hamburger-menü
 const hamburger = document.querySelector(".hamburger");
