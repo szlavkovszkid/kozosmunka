@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,7 @@
     opacity: 0;
     transition: visibility 0s, opacity 0.3s;
 }
+
 .popup {
     background-color: #f80101;
     width: 30%;
@@ -26,7 +27,11 @@
     align-items: center;
     text-align: center;
     color: #ffffff;
+    box-shadow: rgba(46, 62, 240, 0.4) 10px 10px, rgba(46, 91, 240, 0.3) 15px 15px, rgba(46, 137, 240, 0.2) 20px 20px, rgba(46, 149, 240, 0.1) 25px 25px, rgba(46, 179, 240, 0.05) 30px 30px;
+    border-radius: 10px;
+    border: 5px solid #292929;
 }
+
 .popup h1 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -52,11 +57,18 @@ li {
 }
 a {
     text-decoration: none;
+    text-shadow: 10px 10px 25px rgb(203, 201, 193),
+    -10px 10px 25px rgb(220, 216, 202),
+    -10px -10px 25px rgb(211, 207, 194),
+    10px -10px 25px rgb(185, 182, 174);
 }
 
 /* Hamburger menü*/
 .header{
-    border-bottom: 1px solid #E2E8F0;
+    border-color: #e3e3e3;
+    border-width: 20px;
+    border-style: groove;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     position: sticky;
     top: 0;
 }
@@ -65,10 +77,13 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    height: 300px;
+    margin: 0px 50px 0px 50px;
 }
 #logoImg{
-    width: 25%;
-    height: 15%;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
 }
 #mutyi{
     font-size: 4rem;
@@ -111,6 +126,8 @@ a {
     justify-content: center;
     align-items: center;
     padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 10px;
 }
 .a_side{
     display: flex;
@@ -120,6 +137,8 @@ a {
 .a_side img{
     max-width: 60%;
     height: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 .b_side{
     display: flex;
@@ -143,16 +162,22 @@ a {
 
 /* Livechat popup */
 .open-button {
-    background-color: #555555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    padding-bottom: 30px;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 100px;
+  background-color: #4C43CD;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 25px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
   }
   
   /* Popup alapértelmezés szerint elrejtve */
@@ -163,6 +188,7 @@ a {
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
+    border-radius: 15px;
   }
   
   /* Stílusok hozzáadása a form-hoz */
@@ -170,17 +196,19 @@ a {
     max-width: 300px;
     padding: 10px;
     background-color: white;
+    border-radius: 15px;
   }
   
   /* Teljes szélességű szövegterület */
   .form-container textarea {
-    width: 100%;
+    width: 270px;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
     resize: none;
     min-height: 200px;
+    border-radius: 15px;
   }
   
   /* Amikor a szövegterület fókuszba kerül */
@@ -199,11 +227,13 @@ a {
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
+    border-radius: 15px;
   }
   
   /* Piros háttérszín a Mégse gombhoz */
   .form-container .cancel {
     background-color: red;
+    border-radius: 15px;
   }
   
   /* Adjon hozzá néhány lebegő effektust a gombokhoz */
