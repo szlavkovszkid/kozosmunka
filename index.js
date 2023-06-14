@@ -34,3 +34,30 @@ function openForm() {
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
+
+  //slider 
+var counter = 1;
+let intervalID;
+let intervalFunction = () => setInterval(function () {
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+
+  if (counter > 5) {
+    counter = 1;
+  }
+}, 3000);
+
+//ha ráhúzod az egeret megáll a slider
+function stopShow() {
+  clearInterval(intervalID);
+}
+
+//ha elhúzod a kurzort, tovább megy a slider
+function runShow() {
+  intervalID = intervalFunction();
+}
+
+//ha kattintasz egy radio gombra,onnantól fut tovább majd a slider
+function updateCounter(newValue) {
+  counter = newValue;
+}
