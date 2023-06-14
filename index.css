@@ -1,163 +1,253 @@
 /* popup ablak , sötétítés , stb*/
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
 }
 
 .popup {
-    background-color: #f80101;
-    width: 30%;
-    height: 30%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    box-shadow: rgba(46, 62, 240, 0.4) 10px 10px, rgba(46, 91, 240, 0.3) 15px 15px, rgba(46, 137, 240, 0.2) 20px 20px, rgba(46, 149, 240, 0.1) 25px 25px, rgba(46, 179, 240, 0.05) 30px 30px;
-    border-radius: 10px;
-    border: 5px solid #292929;
+  background-color: #f80101;
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: rgba(46, 62, 240, 0.4) 10px 10px, rgba(46, 91, 240, 0.3) 15px 15px, rgba(46, 137, 240, 0.2) 20px 20px, rgba(46, 149, 240, 0.1) 25px 25px, rgba(46, 179, 240, 0.05) 30px 30px;
+  border-radius: 10px;
+  border: 5px solid #292929;
 }
 
 .popup h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
+
 .popup p {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 .popup-overlay.active {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
+
 /* a tényleges body*/
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
 li {
-    list-style: none;
+  list-style: none;
 }
+
 a {
-    text-decoration: none;
-    text-shadow: 10px 10px 25px rgb(203, 201, 193),
+  text-decoration: none;
+  text-shadow: 10px 10px 25px rgb(203, 201, 193),
     -10px 10px 25px rgb(220, 216, 202),
     -10px -10px 25px rgb(211, 207, 194),
     10px -10px 25px rgb(185, 182, 174);
 }
 
 /* Hamburger menü*/
-.header{
-    border-color: #e3e3e3;
-    border-width: 20px;
-    border-style: groove;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    position: sticky;
-    top: 0;
+.header {
+  border-color: #e3e3e3;
+  border-width: 20px;
+  border-style: groove;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  position: sticky;
+  top: 0;
 }
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    height: 300px;
-    margin: 0px 50px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  height: 300px;
+  margin: 0px 50px 0px 50px;
 }
-#logoImg{
-    width: 350px;
-    height: 300px;
-    border-radius: 10px;
+
+#logoImg {
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
 }
-#mutyi{
-    font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
+
+#mutyi {
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
 }
+
 .hamburger {
-    display: none;
+  display: none;
 }
+
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
+
 .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .nav-item {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
 }
-.nav-link:hover{
-    color: #482ff7;
+
+.nav-link:hover {
+  color: #482ff7;
 }
-.footer{
-    width: 100%;
-    height: 10%;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-radius: 10px;
+
+/*Kategóriák Slider*/
+/* Kattintható Kategóriák*/
+#category_container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
 }
-.a_side{
-    display: flex;
-    justify-content: center;
-    width: 15%;
+
+.category {
+  flex: 0 0 30%;
+  margin-right: 10px;
 }
-.a_side img{
-    max-width: 60%;
-    height: 50%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+
+button {
+  width: 70%;
+  height: 30px;
+  border-radius: 10px;
 }
-.b_side{
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-    height: 100%;
+
+.category_container-button {
+  width: 100%;
+  height: auto;
+  margin: 15px;
 }
-#b_sideLeft{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+.category1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 300px;
+  background-image: url(képek/kategoriák/fényképezőgépek/r5.jpeg);
+  background-size: cover;
+  background-position: center;
 }
-#b_sideRight{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    width: 40%;
+
+.category2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 300px;
+  background-image: url(képek/kategoriák/objektívek/35.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.category3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 300px;
+  background-image: url(képek/kategoriák/állványok/dw-manfrotto-546gb-280px.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.category4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 300px;
+  background-image: url(képek/kategoriák/memoriakártya/sd.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 10px;
+}
+
+.a_side {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+
+.a_side img {
+  max-width: 60%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.b_side {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  height: 100%;
+}
+
+#b_sideLeft {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#b_sideRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 40%;
 }
 
 /* Livechat popup */
@@ -178,249 +268,281 @@ a {
   touch-action: manipulation;
 
   cursor: pointer;
-  }
-  
-  /* Popup alapértelmezés szerint elrejtve */
-  .chat-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-    border-radius: 15px;
-  }
-  
-  /* Stílusok hozzáadása a form-hoz */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 15px;
-  }
-  
-  /* Teljes szélességű szövegterület */
-  .form-container textarea {
-    width: 270px;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    resize: none;
-    min-height: 200px;
-    border-radius: 15px;
-  }
-  
-  /* Amikor a szövegterület fókuszba kerül */
-  .form-container textarea:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Stílus beállítása a küldés gombhoz */
-  .form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-    border-radius: 15px;
-  }
-  
-  /* Piros háttérszín a Mégse gombhoz */
-  .form-container .cancel {
-    background-color: red;
-    border-radius: 15px;
-  }
-  
-  /* Adjon hozzá néhány lebegő effektust a gombokhoz */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
+}
+
+/* Popup alapértelmezés szerint elrejtve */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 15px;
+}
+
+/* Stílusok hozzáadása a form-hoz */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* Teljes szélességű szövegterület */
+.form-container textarea {
+  width: 270px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  border-radius: 15px;
+}
+
+/* Amikor a szövegterület fókuszba kerül */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Stílus beállítása a küldés gombhoz */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+/* Piros háttérszín a Mégse gombhoz */
+.form-container .cancel {
+  background-color: red;
+  border-radius: 15px;
+}
+
+/* Adjon hozzá néhány lebegő effektust a gombokhoz */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
 
 /* Mobilbarát stílus */
 @media only screen and (max-width: 768px) {
-    #photoMarket{
-        font-size: 2rem;
-    }
-    #b_sideLeft{
-        font-size: 0.5rem;
-    }
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-    .nav-menu.active {
-        left: 0;
-    }
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .open-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 15px;
-        color: #101010;
-        background-color: chartreuse;
-        position: sticky;
-        bottom: 10%;
-        width: 10%;
-        height: 10%;
-        border-radius: 50%;
-    }
-}
-  
-/*slider css eleje*/
-.slider{
-    width: 800px;
-    height: 500px;
+  #photoMarket {
+    font-size: 2rem;
+  }
+
+  #b_sideLeft {
+    font-size: 0.5rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
     border-radius: 10px;
-    overflow: hidden;
-    margin-left: 30%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
   }
-  
-  .slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
+
+  .nav-menu.active {
+    left: 0;
   }
-  
-  .slides input{
-    display: none;
+
+  .nav-item {
+    margin: 2.5rem 0;
   }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 800px;
-    height: 500px;
-  }
-  
-  .navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .manual-btn{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
+
+  .hamburger {
+    display: block;
     cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .manual-btn:hover{
-    background: white;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
   }
 
-  #radio5:checked ~ .first{
-    margin-left: -80%;
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
   }
- 
-  .navigation-auto{
-    position: absolute;
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .open-button {
     display: flex;
-    width: 800px;
     justify-content: center;
-    margin-top: 460px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: #101010;
+    background-color: chartreuse;
+    position: sticky;
+    bottom: 10%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
   }
-  
-  .navigation-auto div{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: white;
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: white;
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: white;
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: white;
-  }
+}
 
-  #radio5:checked ~ .navigation-auto .auto-btn5{
-    background: white;
-  }
+.footer {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  /*slider css vége*/
+#b_sideLeft {
+  width: 80%;
+}
 
-  /* Tablet méret */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #photoMarket{
-        font-size: 1.5rem;
-    }
+.category {
+  margin: 5px;
+  height: 100px;
+  flex: 0 0 30%;
+}
+
+button {
+  width: 90%
+}
+
+/*slider css eleje*/
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 30%;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: white;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+#radio5:checked~.first {
+  margin-left: -80%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: white;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: white;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: white;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: white;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+  background: white;
+}
+
+/*slider css vége*/
+
+/* Tablet méret */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #photoMarket {
+    font-size: 1.5rem;
   }
-  
-  /* Desktop méret */
-  @media only screen and (min-width: 1024px) {
-    #photoMarket{
-        font-size: 2rem;
-    }
+}
+
+/* Desktop méret */
+@media only screen and (min-width: 1024px) {
+  #photoMarket {
+    font-size: 2rem;
   }
+}
