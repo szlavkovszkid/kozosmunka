@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Canon';
+  src: url('/font/Canon400.ttf');
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('/font/Tungsten-Bold.ttf');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* popup ablak , sötétítés , stb*/
 .popup-overlay {
     position: fixed;
@@ -101,6 +115,67 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
+
+/* Viki */
+
+/* Style the header */
+.header2 {
+  grid-area: header;
+  background: url("képek/LOGO\ pattern-03.jpg") rgb(196, 196, 196);
+  padding: 30px;
+  text-align: center;
+  font-size: 45px;
+}
+
+/* The grid container */
+.grid-container-Viki {
+  display: grid;
+  grid-template-areas: 
+  'header header header header header header' 
+  'left left left left right right' ;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0px 50px 50px;
+  /* grid-column-gap: 10px; */
+} 
+
+.left,
+.right {
+  padding: 10px;
+  min-height: 400px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.right {
+  padding: 30px;
+  min-height: 600px; 
+  display: grid;
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+.right-box {
+  height: 550px;
+  width: 650px;
+}
+
+/* Style the image in the right column */
+#canonOb {
+  max-width: 700px
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -424,3 +499,19 @@ a {
         font-size: 2rem;
     }
   }
+
+  @media (max-width: 600px) {
+    .grid-container-Viki  {
+      grid-template-areas: 
+      'header header header header header header'   
+      'left left left left left left' 
+      'right right right right right right' 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #header2 {
+      font-size: 50%;
+    }
+  }
+  
