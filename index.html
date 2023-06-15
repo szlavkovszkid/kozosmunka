@@ -1,145 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Közös project</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="kategóriák.html">
-    <link href="https://fonts.cdnfonts.com/css/gotham-ssm" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Közös project</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="kategóriák.html">
+  <link href="https://fonts.cdnfonts.com/css/gotham-ssm" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body class="body">
-    <div class="popup-overlay">
-        <div class="popup">
-            <h1>Canon nyári akció</h1>
-            <p>Kattints a bezáráshoz!</p>
-        </div>
+  <div class="popup-overlay">
+    <div class="popup">
+      <h1>Canon nyári akció</h1>
+      <p>Kattints a bezáráshoz!</p>
     </div>
-    <header class="header">
-        <nav class="navbar">
-            <img  id="logoImg" src="képek/LOGO-01.jpg" alt="logo">
-            <h1 id="photoMarket">Photo Market</h1>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-    <!--slider start-->
-    <div class="slider" onmouseover="stopShow()" onmouseout="runShow()">
-        <div class="slides">
-          <!--kattintható gombok-->
-          <input type="radio" name="radio-btn" id="radio1" checked onclick="updateCounter(1)">
-          <input type="radio" name="radio-btn" id="radio2" onclick="updateCounter(2)">
-          <input type="radio" name="radio-btn" id="radio3" onclick="updateCounter(3)">
-          <input type="radio" name="radio-btn" id="radio4" onclick="updateCounter(4)">
-          <input type="radio" name="radio-btn" id="radio5" onclick="updateCounter(5)">
-        
-          <!--slider képek-->
-          <div class="slide first">
-            <img src="képek\kategoriák\slider\slider 1.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="képek\kategoriák\slider\slider 2.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="képek\kategoriák\slider\slider 3.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="képek\kategoriák\slider\slider 4.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="képek\kategoriák\slider\slider 5.jpeg" alt="">
-          </div>          
-          <!--automatic navigation-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-          </div>
-          
-        </div>
-        <!--manual navigation - hány gombot mutasson-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-        </div>
+  </div>
+  <header class="header">
+    <nav class="navbar">
+      <img id="logoImg" src="képek/LOGO-01.jpg" alt="logo">
+      <h1 id="photoMarket">Photo Market</h1>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!--slider start-->
+  <div class="slider" onmouseover="stopShow()" onmouseout="runShow()">
+    <div class="slides">
+      <!--kattintható gombok-->
+      <input type="radio" name="radio-btn" id="radio1" checked onclick="updateCounter(1)">
+      <input type="radio" name="radio-btn" id="radio2" onclick="updateCounter(2)">
+      <input type="radio" name="radio-btn" id="radio3" onclick="updateCounter(3)">
+      <input type="radio" name="radio-btn" id="radio4" onclick="updateCounter(4)">
+      <input type="radio" name="radio-btn" id="radio5" onclick="updateCounter(5)">
+
+      <!--slider képek-->
+      <div class="slide first">
+        <img src="képek\kategoriák\slider\slider 1.jpeg" alt="">
+      </div>
+      <div class="slide">
+        <img src="képek\kategoriák\slider\slider 2.jpeg" alt="">
+      </div>
+      <div class="slide">
+        <img src="képek\kategoriák\slider\slider 3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="képek\kategoriák\slider\slider 4.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="képek\kategoriák\slider\slider 5.jpeg" alt="">
+      </div>
+      <!--automatic navigation-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
       </div>
 
-      <!-- Viki -->
-<br><br><br>
-<div class="grid-container-Viki">
-  
-  <div class="header2">
-    <h3 id="header2">A hónap kedvenc terméke:</h3>
-    <h2 id="header2"><span style = "font-family: Canon">Canon</span> <span style="color: #BF1920; font-family: Tungsten; font-size: 115%">RF 100-300MM F2.8L IS USM</span></h2>
+    </div>
+    <!--manual navigation - hány gombot mutasson-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>
+  </div>
+                                          <!-- Karesz-kategóriák -->
+  <div id="category_container">
+    <div class="category category1" onclick=""><button>Fényképezők</button></div>
+    <div class="category category2" onclick=""><button>Objektívek</button></div>
+    <div class="category category3" onclick=""><button>Állványok</button></div>
+    <div class="category category4" onclick=""><button>Memóriák</button></div>
   </div>
 
-    <div class="left"><img id = "canonOb" src="képek/kategoriák/objektívek/100-300.jpg" alt="obj"></div>
+  <!-- Viki -->
+  <br><br><br>
+  <div class="grid-container-Viki">
+
+    <div class="header2">
+      <h3 id="header2">A hónap kedvenc terméke:</h3>
+      <h2 id="header2"><span style="font-family: Canon">Canon</span> <span
+          style="color: #BF1920; font-family: Tungsten; font-size: 115%">RF 100-300MM F2.8L IS USM</span></h2>
+    </div>
+
+    <div class="left"><img id="canonOb" src="képek/kategoriák/objektívek/100-300.jpg" alt="obj"></div>
     <div class="right">
       <div class="right-box">
 
-      <h2>RF OBJEKTÍVEK</h2> 
-      <br>
-      <h1><span style = "font-family: Canon">Canon</span> <span style="color: #BF1920; font-family: Tungsten; font-size: 115%">RF 100-300MM F2.8L IS USM</span></h1>
-      <br>
-      <h2>Kerülj nyertes helyzetbe egy szupergyors teleobjektívvel, amely megadja a prímobjektívek által nyújtott előnyt a sportfotózáshoz és sok minden máshoz</h2>
-      <br>
-      <h3>Ne aggódj, ha a prímobjektívek által biztosított elképesztő fókuszálási sebességre, élességre és teljesítményre van szükséged a zoomobjektívek sokoldalúságával együtt, hiszen az RF 100-300mm F2.8L IS USM mindkettőt biztosítja számodra. A teljes zoomtartományban f/2.8-as, nagy rekeszértékkel, az elképesztő élességgel, az 5,5 fokozatú képstabilizátorral1 és az L sorozatra jellemző időjárásálló kivitellel ez az objektív új mércéket állít fel.</h3>
+        <h2>RF OBJEKTÍVEK</h2>
+        <br>
+        <h1><span style="font-family: Canon">Canon</span> <span
+            style="color: #BF1920; font-family: Tungsten; font-size: 115%">RF 100-300MM F2.8L IS USM</span></h1>
+        <br>
+        <h2>Kerülj nyertes helyzetbe egy szupergyors teleobjektívvel, amely megadja a prímobjektívek által nyújtott
+          előnyt a sportfotózáshoz és sok minden máshoz</h2>
+        <br>
+        <h3>Ne aggódj, ha a prímobjektívek által biztosított elképesztő fókuszálási sebességre, élességre és
+          teljesítményre van szükséged a zoomobjektívek sokoldalúságával együtt, hiszen az RF 100-300mm F2.8L IS USM
+          mindkettőt biztosítja számodra. A teljes zoomtartományban f/2.8-as, nagy rekeszértékkel, az elképesztő
+          élességgel, az 5,5 fokozatú képstabilizátorral1 és az L sorozatra jellemző időjárásálló kivitellel ez az
+          objektív új mércéket állít fel.</h3>
+      </div>
     </div>
-    </div>
-    
+
   </div>
 
   <br><br>
 
-    <footer class="footer">
-        <div class="a_side"><img src="képek/LOGO-01.jpg" alt="logo"></div>
-        <div class="b_side">
-            <div id="b_sideLeft">
-                <p>Kapcsolat:</p>
-                <a href="tel:+36701234567">Telefonáljon</a>
-                <a href="mailto:#">Írjon nekünk</a>
-                <a href="https://eur-lex.europa.eu/legal-content/HU/TXT/HTML/?uri=LEGISSUM:310401_2">GDPRS</a>
-            </div>
-            <div id="b_sideRight">
-            <button class="open-button" onclick="openForm()">Chat</button>
-                <div class="chat-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                        <h1>Chat</h1>
-                        <label for="msg"><b>Üzenet</b></label>
-                        <textarea placeholder="Type message.." name="msg" required></textarea>
-                        <button type="submit" class="btn">Küldés</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Bezár</button>
-                    </form>
-                </div>
-            </div>
+  <footer class="footer">
+    <div class="a_side"><img src="képek/LOGO-01.jpg" alt="logo"></div>
+    <div class="b_side">
+      <div id="b_sideLeft">
+        <p>Kapcsolat:</p>
+        <a href="tel:+36701234567">Telefonáljon</a>
+        <a href="mailto:#">Írjon nekünk</a>
+        <a href="https://eur-lex.europa.eu/legal-content/HU/TXT/HTML/?uri=LEGISSUM:310401_2">GDPRS</a>
+      </div>
+      <div id="b_sideRight">
+        <button class="open-button" onclick="openForm()">Chat</button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+            <label for="msg"><b>Üzenet</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Küldés</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Bezár</button>
+          </form>
         </div>
-    </footer>
-    <script src="index.js"></script>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
 </body>
+
 </html>
