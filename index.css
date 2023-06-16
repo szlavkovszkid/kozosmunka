@@ -107,6 +107,10 @@ a {
   background-color: #101010;
 }
 
+.slider{
+  margin-left: 30%;
+}
+
 /* Viki */
 
 /* Style the header */
@@ -443,7 +447,6 @@ button {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  margin-left: 30%;
 }
 
 .slides {
