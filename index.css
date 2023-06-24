@@ -192,10 +192,36 @@ a {
 }
 
 /* Kattintható Kategóriák*/
-#category_container {
+.categorybox {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+  
+}
+
+.itemekbox {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+  
+}
+
+.category_item{
+  display: block;
+  width: 300px;
+  text-align: center;
+}
+
+.category_item2{
+  display: block;
+  width: 300px;
+  text-align: center;
 }
 
 .category {
@@ -204,7 +230,6 @@ a {
 }
 
 button {
-  width: 70%;
   height: 30px;
   border-radius: 10px;
 }
